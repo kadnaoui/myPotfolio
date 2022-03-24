@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+/*----------------------------------------*/
+
+
+    
+
+#logo{
+    width: 2em;
+    margin-right:3%;
+    
+}
+
+#title,.nav-link{
+    font-size: 120%;
+    
+    margin-bottom: 0;
+    margin-left: 1%;
+    font-weight: x-large;
+    width: max-content;
+
+    
+}
+.navbar-brand>h1{font-size: 200%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+margin: unset;}
+.nav-link:focus{
+    border-top: 0.2em solid white;
+  
+}
+.nav-link:hover{
+    border-top: 0.2em solid rgb(140, 140, 140);
+  
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+width: 70%;
+}
+nav{
+    position: sticky;
+    top: 0%;
+    padding: 7%;
+}
+@media (width<450px) {
+
+    .navbar-brand>h1{font-size: 1em;}
+    #logo{
+        width: 1.3em;
+        margin-right:3%;
+        }
+}
+/*--------------------------*/
+.header-wraper{
+    width: 100%;
+background-image: url(./image/bg.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+}
+#home{
+    min-height: 100vh;
+}
+.main-info{
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+
+}
+.typed{
+    font-size: 400%; 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+@media (width <=900px){   
+    #tsparticles{
+    display: none;
+}}
+#tsparticles{
+    position: absolute !important;
+    height: 100vh;
+    width: 100%;
+}
+
+/*------------------------------*/
+#aboutme{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+}
+
+.img{
+   min-width: 30%;
+   display: flex;
+   justify-content: center;
+ 
+}
+.infos{
+  
+    margin-left: 2em;
+width: 70%;
+font-size: 1.2em;
+padding: 0.8em;
+
+}
+.infos>h1{
+    font-size: 2em;
+    color: cornflowerblue;
+}
+#myphoto{
+   
+    width: 85%;
+    transition: 0.5s ease-in-out;
+  }
+ 
+
+@media (width<900px) {
+    #aboutme{
+      flex-direction: column;
+      margin-top: 2em;
+      
+    }
+    .infos{  font-size: 1.2em;
+        width: 80%;
+        padding: 0.2em;order: 2;}
+ 
+        #myphoto{
+            order: 1;
+           }
+}
+/*------------------*/
+.projectsdiv{
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 2%;
+}
+.carousel2{
+    width: 50%;
+    height: fit-content;
+}
+.carousel{
+    width: 100%;
+}
+.projectinfos{
+   width: 40%;
+   display: flex;
+   text-align: center;
+   align-items: center;
+}
+.typed2{
+    font-size: 200%; 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+@media (width<800px) {
+    .projectsdiv{
+        width: 100%;
+        flex-direction: column;
+        padding: 5%;
+       align-items: center;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        display: none!important;
+    }
+.carousel2{
+    width: 100%;
+}
+.projectinfos{
+    width: 100%!important;
+}
+.typed2>span,.typed2{
+    width: 100%!important;
+}
+
+}
+
+/*--------------------------*/
+            #contact{
+                    width: 100%;
+                  min-height :fit-content;
+                    display: flex;
+                    
+                    justify-content: center;
+                    align-items: center;
+                    
+}
+
+                .cntct{
+                    margin-top: 1em;
+                    height: 100vh;
+                    font-size: 1.5em;
+                   
+                    padding-bottom: 2em;
+                }
+                .contact1{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .contact2{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:start;
+                    align-items: start;
+                    text-align: start;
+               
+                }
+                .inputs{
+                    width: 80%;
+                    
+                }
+                #text{
+                    resize: none;
+                    width: 80%;
+                }
+                .btn{
+                    width:80%;
+                    margin-top: 1em;
+                  
+                }
+           
+                .intro{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    height: 35%;
+                    margin-top: 6em;
+                }
+                @media (width<900px) {
+                    .cntct{
+                        height: fit-content;
+                    }
+                    #contact{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: fit-content;
+                }
+                
+                .contact1{
+                width: 100%;
+                  justify-content: start;
+                  text-align: start;
+                }
+                .contact2{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items: center;
+                    text-align: start;
+                }
+                .projectsdiv{
+                    width: 100%;
+                 
+                }
+                .projects{
+                    min-width: 80%;
+                    margin-inline: 10%;
+                }
+                    
+                }
+                /*----------------*/
+                #footer{
+                    height: fit-content;
+                    width: 100%;
+                    min-height: 40vh;
+                    background-color: #212529;
+                    font-size: 1em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .pinfo{
+                    color: white;
+                    margin: 8%;
+                    font-size: 120%;
+                    
+                }
+                .site{
+                 display: flex;
+                 flex-direction: column;
+               align-items: center;
+                }
+                .site>a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 120%;
+                    margin: 10%;
+                }
+                .site>a:hover{
+                    color: white;
+                    text-decoration: underline;
+                }
+                .smedia{
+                    display: flex;
+                    margin-inline: 8%;
+                    
+                    
+                }
+                .smedia>a>img{
+                    width: 70%; margin-inline: 1em;
+                }
+                @media (width<900px) {
+                    #footer{
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                    .smedia>img{
+                        width: 2em; margin-inline: 1em;
+                    }
+                    .smedia,.site{
+                        margin-bottom: 7%;
+                    }
+                    .pinfo{
+                    
+                    }
+                
+                }
+                .nav-link{
+                    margin: auto;
+                }
+              
