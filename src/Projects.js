@@ -80,6 +80,7 @@ const Projects = () => {
             animate={inView ? 'visible' : 'hidden'}
             transition='transition'
             className='projectsdiv'
+            id='projectsdiv'
             ref={ref}
 
         >
