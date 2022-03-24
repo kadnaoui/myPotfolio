@@ -15,7 +15,7 @@ const Projects = () => {
         visible: {
             x: 0,
             transition: {
-                duration: 1,
+                duration: 0.7,
                 when: 'beforeChildren',
                 staggerChildren: 0.2
             }

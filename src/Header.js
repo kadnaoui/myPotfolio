@@ -20,7 +20,7 @@ export default function Header() {
 
                     <Typed
                         className='typed'
-                        strings={['Frontend Developer', 'Frontend Developer a Fresher']}
+                        strings={['Abderrahim Kadnaoui', 'Web Developer', '(Frontend Developer) ']}
                         typeSpeed={50}
                         backSpeed={20}
                         loop
