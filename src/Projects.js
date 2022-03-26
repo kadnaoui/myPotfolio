@@ -56,18 +56,21 @@ const Projects = () => {
         setIndex(selectedIndex);
     };
     const [infos, setInfos] = React.useState([]);
-
+    const [Title, setTitle] = React.useState();
     console.log(infos);
     React.useEffect(() => {
         switch (index) {
             case 0:
                 setInfos(['Generate a random meme image from an Api and add your idea to it.'])
+                setTitle('Meme Generator')
                 break;
             case 1:
                 setInfos(['', 'Check informations about crypto currancies and refresh to get newer data from the Api '])
+                setTitle('Crypto currencies')
                 break;
             case 2:
                 setInfos(['', 'Create your account, add pictures or stories, follow any of the fake accounts, interact with others posts by leaving likes and comments, add your own posts and stories and all of that without the page refreghing', 'Create your account, add pictures or stories, follow any of the fake accounts, interact with others posts by leaving likes and comments, add your own posts and stories and all of that without the page refreshing. '])
+                setTitle('Instagram Clone')
                 break;
 
 
@@ -91,7 +94,7 @@ const Projects = () => {
 
                     {projects.map(i => {
                         return (
-                            <Carousel.Item interval={10000} key={i.id}>
+                            <Carousel.Item interval={20000} key={i.id}>
                                 <img
                                     className="d-block w-100"
                                     src={i.src}
@@ -104,12 +107,15 @@ const Projects = () => {
                 </Carousel>
             </motion.div>
             <motion.div className='projectinfos' variants={listVariant}>
+
+                <div className='Title'> {Title}</div>
                 <Typed
                     className='typed2'
                     strings={infos}
                     typeSpeed={30}
                     backSpeed={10}
                 />
+
             </motion.div>
 
         </motion.div >
